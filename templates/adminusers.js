@@ -83,19 +83,19 @@ Template.adminusers.events({
       }, 1000);
     return false;
   },
-  'click .adminusers .icon-trash': function(event, template) {
+  'click .adminusers .fa-trash-o': function(event, template) {
     var id = getUIDFromEvent(event);
     if (id) {
       openDeleteUserDialog(id);
     }
   },
-  'click .adminusers .icon-edit': function(event, template) {
+  'click .adminusers .fa-edit': function(event, template) {
     var id = getUIDFromEvent(event);
     if (id) {
       openEditUserDialog(id);
     }
   },
-  'click .adminusers .icon-info-sign': function(event, template) {
+  'click .adminusers .fa-info': function(event, template) {
     var id = getUIDFromEvent(event);
     if (id) {
       openInfoUserDialog(id);

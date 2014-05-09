@@ -13,9 +13,9 @@ openEditUserDialog = function(userid) {
 };
 Template.editUserDialog.events({
   'click .edituser .save': function (event, template) {
-    if ($("form.edituser :input").jqBootstrapValidation("hasErrors")) {
-      return;
-    }
+    // if ($("form.edituser :input").jqBootstrapValidation("hasErrors")) {
+    //   return;
+    // }
     var username = $.trim(template.find(".username").value);
     var email = template.find(".email").value;
     var roles = [];
@@ -49,7 +49,7 @@ Template.editUserDialog.events({
   }
 });
 Template.editUserDialog.rendered = function() {
-  $("form.edituser :input").jqBootstrapValidation();
+  //$("form.edituser :input").jqBootstrapValidation();
 };
 Template.editUserDialog.helpers({
   user: function() {
