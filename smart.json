@@ -7,7 +7,6 @@
   "git": "https://github.com/kenyee/meteor-accounts-admin-ui.git",
   "packages": {
     "jquery-ui": "1.9.2",
-    "jqbootstrapvalidation": "0.1.0",
     "roles": "1.2.8"
   }
 }
